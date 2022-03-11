@@ -1,0 +1,842 @@
+/* COLORS */
+/* FONTS */
+/* BORDERS & SHADOWS */
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-feature-settings: "lnum" 1;
+          font-feature-settings: "lnum" 1;
+  color: #394a69;
+  background: #eceff8;
+  /* background: linear-gradient($color_background 0%, $color_background 40%, $color_white 100%); */
+  /* FOOTER */
+}
+
+html body nav {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 80px;
+  background: #ffffff;
+  font-weight: 500;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  -webkit-box-shadow: 0px 5px 10px rgba(57, 74, 105, 0.2);
+          box-shadow: 0px 5px 10px rgba(57, 74, 105, 0.2);
+  z-index: 5;
+}
+
+html body nav a {
+  position: relative;
+  margin: auto 30px;
+  color: #bdc2c6;
+  text-decoration: none;
+}
+
+html body nav #active {
+  color: #394a69;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body nav #underline {
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 0;
+  background: #5b5ec9;
+  bottom: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+html body nav #header-logo {
+  position: absolute;
+  left: 80px;
+  width: 10%;
+}
+
+html body section {
+  z-index: 2;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 200px;
+}
+
+html body section .content {
+  margin: 0px 200px;
+  margin-bottom: 0;
+  /* GENERAL CONTENT SETTINGS */
+  /* HOME-SETTINGS */
+  /* ABOUT-SETTINGS */
+  /* USE-CASE-SETTINGS */
+  /* STATISTICS-SETTINGS */
+  /* DOCUMENTATION-SETTINGS */
+}
+
+html body section .content .intro {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content .home_title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+html body section .content .section_title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+html body section .content .sub_title {
+  margin-bottom: 80px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  width: 50%;
+}
+
+html body section .content .call_to_action {
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  text-decoration: none;
+  color: #f36454;
+  margin-top: 20px;
+}
+
+html body section .content #home_image {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1000;
+}
+
+html body section .content #about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #about-container .about-container-item {
+  width: 45%;
+}
+
+html body section .content #about-container .about-container-item .about-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #about-container .about-container-item .about-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #about-container .about-container-item .about-container-item-text a {
+  color: #f36454;
+  text-decoration: none;
+}
+
+html body section .content #about_image {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 50%;
+  z-index: -1000;
+}
+
+html body section .content #use_case-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #use_case-container .use_case-container-item {
+  width: 30%;
+}
+
+html body section .content #use_case-container .use_case-container-item .use_case-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #use_case-container .use_case-container-item .use_case-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #statistics-dashboard {
+  margin: auto;
+  width: 100%;
+  border-radius: 20px;
+  padding: 50px;
+  background: #f4f7ff;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 2fr;
+      grid-template-rows: 0.5fr 2fr;
+  grid-auto-columns: 1fr;
+  grid-gap: 30px;
+      grid-template-areas: "leader rising-star overview" "market market overview";
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items .statistics-dashboard-item {
+  background: #f4f7ff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px rgba(57, 74, 105, 0.1);
+          box-shadow: 5px 5px 10px rgba(57, 74, 105, 0.1);
+  padding: 30px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: leader;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title title" "name growth";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content #leader-content-title {
+  font-size: 15px;
+  font-weight: 700;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content #leader-content-name {
+  font-size: 25px;
+  font-weight: 700;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content #leader-content-growth {
+  font-size: 16px;
+  font-weight: 700;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: growth;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content #leader-content-growth #leader-content-growth-time {
+  font-size: 12px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #leader #leader-content #leader-support-text {
+  color: rgba(57, 74, 105, 0.8);
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rising-star;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title title" "name growth";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content #rising-star-content-title {
+  font-size: 15px;
+  font-weight: 700;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content #rising-star-content-name {
+  font-size: 25px;
+  font-weight: 700;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content #rising-star-content-growth {
+  font-size: 16px;
+  font-weight: 700;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: growth;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content #rising-star-content-growth #rising-star-content-growth-time {
+  font-size: 12px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #rising-star #rising-star-content #rising-star-support-text {
+  color: rgba(57, 74, 105, 0.8);
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: market;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-statistic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-bitcoin-currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-bitcoin-currency div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-bitcoin-currency #market-content-bitcoin-currency-point {
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background: red;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-bitcoin-currency #market-content-bitcoin-currency-name {
+  font-weight: 700;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-ethereum-currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-ethereum-currency div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-ethereum-currency #market-content-ethereum-currency-point {
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background: steelblue;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #market #market-content #market-content-currency-labels #market-content-ethereum-currency #market-content-ethereum-currency-name {
+  font-weight: 700;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: overview;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-selection .overview-content-selection-item {
+  font-size: 10px;
+  font-weight: 700;
+  color: #5b5ec9;
+  border: 3px solid #5b5ec9;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-selection .overview-content-selection-item:hover {
+  cursor: pointer;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-selection .active-selection {
+  background: #5b5ec9;
+  color: #f4f7ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-text {
+  text-align: justify;
+}
+
+html body section .content #statistics-dashboard .statistics-dashboard-items #overview #overview-content #overview-content-text #overview-content-text-specification {
+  color: rgba(57, 74, 105, 0.8);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+html body section .content #individual-results #individual-results-title {
+  margin-top: 200px;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+html body section .content #individual-results #individual-results-subtitle {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 0.5fr 5fr 0.5fr;
+      grid-template-rows: 0.5fr 5fr 0.5fr;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: "selection result" "statistic result" "slider result";
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-selection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: selection;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-selection .individual-results-timeline-container-currency-selection-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5b5ec9;
+  border: 3px solid #5b5ec9;
+  border-radius: 50px;
+  padding: 10px 25px 10px 25px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-selection .individual-results-timeline-container-currency-selection-item:hover {
+  cursor: pointer;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-selection .currency-selection {
+  background: #5b5ec9;
+  color: #f4f7ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-statistic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: statistic;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: result;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-first-item {
+  margin-bottom: 50px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-first-item #individual-results-timeline-container-currency-result-first-item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-first-item #individual-results-timeline-container-currency-result-first-item-title div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-first-item #individual-results-timeline-container-currency-result-first-item-title #individual-results-timeline-container-currency-result-first-item-title-point {
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background: red;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-first-item #individual-results-timeline-container-currency-result-first-item-title #individual-results-timeline-container-currency-result-first-item-title-text-coin1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-second-item #individual-results-timeline-container-currency-result-second-item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-second-item #individual-results-timeline-container-currency-result-second-item-title div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-second-item #individual-results-timeline-container-currency-result-second-item-title #individual-results-timeline-container-currency-result-second-item-title-point {
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background: steelblue;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result #individual-results-timeline-container-currency-result-second-item #individual-results-timeline-container-currency-result-second-item-title #individual-results-timeline-container-currency-result-second-item-title-text-coin2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-currency-result .individual-results-timeline-container-currency-result-item-information {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-slider {
+  margin: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: slider;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-slider #amount {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+html body section .content #individual-results #individual-results-timeline-container #individual-results-timeline-container-slider #slider-range {
+  width: 500px;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .individual-results-bar-chart-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .individual-results-bar-chart-container-item-selection {
+  height: 12px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5b5ec9;
+  border: 3px solid #5b5ec9;
+  border-radius: 50px;
+  padding: 10px 25px 10px 25px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .hover-text {
+  visibility: hidden;
+  width: 400px;
+  line-height: 1.5;
+  background-color: #394a69;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .individual-results-bar-chart-container-item-selection:hover + .hover-text {
+  visibility: visible;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .active-information {
+  background: #5b5ec9;
+  color: #f4f7ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .active-ranking {
+  background: #5b5ec9;
+  color: #f4f7ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container .individual-results-bar-chart-container-item .active-time {
+  background: #5b5ec9;
+  color: #f4f7ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container-statistic {
+  margin-top: 50px;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container-statistic .bar--positive {
+  fill: steelblue;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container-statistic .bar--negative {
+  fill: steelblue;
+}
+
+html body section .content #individual-results #individual-results-bar-chart-container-statistic .axis text {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+html body section .content #individual-results #racing-bar-chart-container-statistic {
+  width: 100%;
+  text-align: center;
+}
+
+html body section .content #individual-results #racing-bar-chart-container-statistic #date-racechart {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+html body section .content #individual-results #racing-bar-chart-container-statistic #date-racechart #current-month {
+  font-size: 18px;
+  color: steelblue;
+}
+
+html body section .content #documentation-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 100px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+html body section .content #documentation-container .documentation-container-item .documentation-container-item-title {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+html body section .content #documentation-container .documentation-container-item .documentation-container-item-text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+html body section .content #documentation-container .documentation-container-item .documentation-container-item-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #f36454;
+}
+
+html body footer {
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 50px 100px 50px 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  justify-items: normal;
+}
+
+html body footer .contact {
+  margin-left: 50px;
+}
+
+html body footer .contact .title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body footer .contact .person {
+  margin-top: 20px;
+}
+
+html body footer .contact .person .name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+html body footer .contact .person a {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #f36454;
+}
+
+html body footer .disclaimer {
+  margin: auto;
+}
+
+html body footer .disclaimer .title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body footer .disclaimer .text {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+html body footer img {
+  margin-left: 50px;
+  width: 100px;
+}
+
+/**
+  * D3-SETTINGS
+  */
+.x-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+path {
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+/*# sourceMappingURL=style.css.map */

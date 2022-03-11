@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>sdaih22</title>
+
+  <!-- FavIcon -->
+  <!--<link rel="icon" type="image/x-icon" href="img/favicon-32x32.ico">-->
+
+  <!-- REGULAR CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+</head>
+
+<body>
+  <script>
+    // Clickable home button
+    function logoClicked() {
+      document.location = "#home"
+    }
+  </script>
+
+  <nav>
+    <!--<img src="img/horizontal_logo.png" onclick="logoClicked()" alt="Logo" id="header-logo">-->
+    <div id="underline"></div>
+    <!--
+    <a href="#home" id="active" class="menu-home">Home</a>
+    <a href="#about" id="" class="menu-about">About</a>
+    <a href="#use_case" id="" class="menu-usecase">Problem Definition</a>
+    <a href="#statistics" id="" class="menu-statistics">Visualization</a>
+    <a href="#documentation" id="" class="menu-documentation">Documentation</a>
+    -->
+  </nav>
+
+  <script type="text/javascript">
+    var underline = document.querySelector('#underline');
+    var nav_item = document.querySelectorAll('nav a');
+
+    function indicator(e) {
+      underline.style.left = e.offsetLeft + "px";
+      underline.style.width = e.offsetWidth + "px";
+      e.id = "active";
+    }
+  </script>
+
+  <script>
+    $(function () {
+
+
+      function scrollStop(callback, refresh = 100) {
+
+        // Make sure a valid callback was provided
+        if (!callback || typeof callback !== 'function') return;
+
+        // Setup scrolling variable
+        let isScrolling;
+
+        // Listen for scroll events
+        window.addEventListener('scroll', function (event) {
+
+          // Clear our timeout throughout the scroll
+          window.clearTimeout(isScrolling);
+
+          // Set a timeout to run after scrolling ends
+          isScrolling = setTimeout(callback, refresh);
+
+        }, false);
+
+      }
+
+      function indicator(e) {
+        underline.style.left = e.offsetLeft + "px";
+        underline.style.width = e.offsetWidth + "px";
+        e.id = "active";
+      }
+
+      function reset_navbar(except_current_menu) {
+        const menu_points = [".menu-home", ".menu-about", ".menu-usecase", ".menu-statistics", ".menu-documentation"];
+        menu_points.forEach(element => {
+          let active_element = document.querySelector(element)
+          if (active_element.id != "")
+            active_element.id = ""
+        });
+      }
+      //your code
+      var homebottom = $('#home').offset().top + $('#home').height();
+      var aboutbottom = $('#about').offset().top + $('#about').height();
+      var usecasebottom = $('#use_case').offset().top + $('#use_case').height();
+      var statisticsbottom = $('#statistics').offset().top + $('#statistics').height();
+
+      // initial call
+      let active_element = document.querySelector('.menu-home');
+      active_element.id = "active";
+      indicator(active_element);
+
+      $(window).on('scroll', function () {
+        scrollStop(function () {
+          stop = Math.round($(window).scrollTop());
+          if (stop < homebottom) {
+
+            reset_navbar(".menu-home");
+            var active_element = document.querySelector('.menu-home')
+            active_element.id = "active";
+          }
+          if (stop > homebottom) {
+            reset_navbar(".menu-about");
+            var active_element = document.querySelector('.menu-about')
+            active_element.id = "active";
+          }
+
+          if (stop > aboutbottom) {
+            reset_navbar(".menu-usecase");
+            var active_element = document.querySelector('.menu-usecase')
+            active_element.id = "active";
+          }
+          if (stop > usecasebottom) {
+            reset_navbar(".menu-statistics");
+            var active_element = document.querySelector('.menu-statistics')
+            active_element.id = "active";
+          }
+          if (stop > statisticsbottom) {
+            reset_navbar(".menu-documentation");
+            var active_element = document.querySelector('.menu-documentation')
+            active_element.id = "active";
+          }
+
+          indicator(active_element)
+
+
+        });
+
+      });
+    });
+  </script>
+
+  <section id="home">
+    <div class="content">
+      <p class="intro">Workshop for IJCAI–ECAI 2022</p>
+      <p class="home_title">Scarce Data in Artificial Intelligence for Healthcare
+        (SDAIH)</p>
+        <!--
+      <p class="sub_title">Will you become rich using CURRENTCY without any extra work? No, but we provide you current
+        crypto currency rates in an interactively designed dashboard enriched with helpful extra metrics...<br><br>
+      
+      </p>-->
+      <a href="#" class="call_to_action">Soon more information</a>
+     <!-- <img id="home_image" src="img/home.png" alt="Background image"> -->
+    </div>
+  </section>
+
+  <!--
+  <section id="about">
+    <div class="content">
+      <p class="section_title">About</p>
+      <div id="about-container">
+        <div class="about-container-item">
+          <p class="about-container-item-title">Who we are...</p>
+          <p class="about-container-item-text"><strong><a href="mailto:nico.iseli@stud.hslu.ch">Nico Iseli</a></strong>
+            (left) is finishing his bachelor program this
+            semester. Afterwards he will start a new challenge in the industry as an UX Designer.<br><br><br>One on his
+            own is practically
+            worthless. Nico works on this project together with <strong><a
+                href="mailto:adrian.willi@stud.hslu.ch">Adrian Willi</a></strong> (right). He is also in his
+            last semester of the bachelors
+            program. In contrast to Nico he is going to continue studying.</p>
+        </div>
+        <div class="about-container-item">
+          <p class="about-container-item-title">What we do...</p>
+          <p class="about-container-item-text">Nico's primary area of ​​interest is UX design. In his leisure time he is
+            passionate about going outdoors.<br><br>During
+            the bachelor program Adrian focused mainly on Visual Computing
+            and Artificial Intelligence. When not studying then he likes cycling and running<br><br></p>
+        </div>
+      </div>
+      <img id="about_image" src="img/about.png" alt="About image">
+    </div>
+
+  </section>
+
+  <section id="use_case">
+    <div class="content">
+      <p class="section_title">Problem Definition</p>
+      <div id="use_case-container">
+        <div class="use_case-container-item">
+          <p class="use_case-container-item-title">Problem Description</p>
+          <p class="use_case-container-item-text">Nowadays we have an <strong>information overload</strong> in the field
+            of crytocurrencies. It is hard to find the information you are looking for within a short time. Furthermore
+            most of the cryptocurrency platforms have no option for highly interactive dashboards. Normally they ask for
+            an account to get access to such options if they are available. For this reason <strong>trading with
+              cryptocurrencies can be frustrating</strong> and very time consuming.</p>
+        </div>
+        <div class="use_case-container-item">
+          <p class="use_case-container-item-title">Target-Group</p>
+          <p class="use_case-container-item-text"> This site is made for people who have an <strong>interest in
+              cryptocurrencies</strong>. It doesn't matter if they are professionals or beginners in this field.
+            Especially suitable is the site if you have little time and want to find the information you are looking for
+            quickly.</p>
+        </div>
+        <div class="use_case-container-item">
+          <p class="use_case-container-item-title">Objective & Vision</p>
+          <p class="use_case-container-item-text"> The goal is to provide a <strong>highly interactive
+              dashboard</strong> with real time data. Every user should find the desired metric quickly to save time.
+            This page is intended to help people find their way through the flood of information without missing
+            important information. In addition, the site should be <strong>easy to use</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="statistics">
+    <div class="content">
+      <p class="section_title">Visualization</p>
+      <div id="statistics-dashboard">
+        <div class="statistics-dashboard-title">Dashboard</div>
+        <div class="statistics-dashboard-items">
+          <div class="statistics-dashboard-item" id="leader">
+            <div id="leader-content">
+              <div id="leader-content-title"></div>
+              <p id="leader-content-name">Bitcoin</p>
+              <p id="leader-content-growth"><span id="leader-content-growth-number"></span><span
+                  id="leader-content-growth-time"></span></p>
+            </div>
+          </div>
+          <div class="statistics-dashboard-item" id="rising-star">
+            <div id="rising-star-content">
+              <div id="rising-star-content-title"></div>
+              <p id="rising-star-content-name">Ethereum</p>
+              <p id="rising-star-content-growth"><span id="rising-star-content-growth-number"></span><span
+                  id="rising-star-content-growth-time"></span></p>
+            </div>
+          </div>
+          <div class="statistics-dashboard-item" id="market">
+            <div id="market-content">
+              <div id="market-content-title">The Market</div>
+              <div id="market-content-statistic">
+
+              </div>
+              <div id="market-content-currency-labels">
+                <div id="market-content-bitcoin-currency">
+                  <div id="market-content-bitcoin-currency-point"></div>
+                  <div id="market-content-bitcoin-currency-name">Bitcoin</div>
+                </div>
+                <div id="market-content-ethereum-currency">
+                  <div id="market-content-ethereum-currency-point"></div>
+                  <div id="market-content-ethereum-currency-name">Ethereum</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics-dashboard-item" id="overview">
+            <div id="overview-content">
+              <div id="overview-content-selection">
+                <div class="overview-content-selection-item">This week</div>
+                <div class="overview-content-selection-item active-selection">This month</div>
+                <div class="overview-content-selection-item">This year</div>
+              </div>
+              <div id="overview-content-title">About the Dashboard</div>
+              <p id="overview-content-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="individual-results">
+        <div id="individual-results-title">Coin-Based Time-Series</div>
+        <div id="individual-results-subtitle">Select two coins</div>
+        <div id="individual-results-timeline-container">
+          <div id="individual-results-timeline-container-currency-selection">
+            <div class="individual-results-timeline-container-currency-selection-item currency-selection">Bitcoin</div>
+            <div class="individual-results-timeline-container-currency-selection-item currency-selection">Ethereum</div>
+            <div class="individual-results-timeline-container-currency-selection-item">BNB</div>
+            <div class="individual-results-timeline-container-currency-selection-item">Solana</div>
+            <div class="individual-results-timeline-container-currency-selection-item">Tether</div>
+            <div class="individual-results-timeline-container-currency-selection-item">Cardano</div>
+          </div>
+          <div id="individual-results-timeline-container-statistic">
+
+          </div>
+          <div id="individual-results-timeline-container-currency-result">
+            <div id="individual-results-timeline-container-currency-result-first-item">
+              <div id="individual-results-timeline-container-currency-result-first-item-title">
+                <div id="individual-results-timeline-container-currency-result-first-item-title-point"></div>
+                <div id="individual-results-timeline-container-currency-result-first-item-title-text-coin1"></div>
+              </div>
+              <div id="individual-results-timeline-container-currency-result-first-item-max"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+              <div id="individual-results-timeline-container-currency-result-first-item-min"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+              <div id="individual-results-timeline-container-currency-result-first-item-avg"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+            </div>
+            <div id="individual-results-timeline-container-currency-result-second-item">
+              <div id="individual-results-timeline-container-currency-result-second-item-title">
+                <div id="individual-results-timeline-container-currency-result-second-item-title-point"></div>
+                <div id="individual-results-timeline-container-currency-result-second-item-title-text-coin2"></div>
+              </div>
+              <div id="individual-results-timeline-container-currency-result-second-item-max"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+              <div id="individual-results-timeline-container-currency-result-second-item-min"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+              <div id="individual-results-timeline-container-currency-result-second-item-avg"
+                class="individual-results-timeline-container-currency-result-item-information"></div>
+            </div>
+            <div id="individual-results-timeline-container-currency-result-item"></div>
+          </div>
+          <div id="individual-results-timeline-container-slider">
+            <p id="amount"></p>
+            <div id="slider-range"></div>
+          </div>
+        </div>
+        <div id="individual-results-title">Metric-Based Ranking of Crypto Currencies</div>
+
+
+        <div id="individual-results-bar-chart-container">
+          <div class="individual-results-bar-chart-container-item"
+            id="individual-results-bar-chart-container-information">
+            <div class="individual-results-bar-chart-container-item-title">Information</div>
+            <div class="individual-results-bar-chart-container-item-selection active-information">Growth</div>
+            <div class="hover-text">The growth expresses how much the price of the respective cryptocurrency decreased
+              or increased on average in the specified period. The figure is given as a percentage.</div>
+            <div class="individual-results-bar-chart-container-item-selection">Risk</div>
+            <div class="hover-text">In this evaluation the risk stands for the "Sharpe Ratio". In finance, the Sharpe
+              ratio measures the performance of an investment compared to a risk-free asset, after adjusting for its
+              risk. It is defined as the difference
+              between the return on investment (ROI) and the risk-free return, divided by the standard deviation of the
+              investment returns. It represents the additional amount of return that an investor receives per unit of
+              increase in risk.</div>
+            <div class="individual-results-bar-chart-container-item-selection">Volatility</div>
+            <div class="hover-text">Volatility is defined as the annualized standard-deviation of daily
+              returns<br><br>The higher this value, the more fluctuations the coin had. </div>
+          </div>
+          <div class="individual-results-bar-chart-container-item" id="individual-results-bar-chart-container-time">
+            <div class="individual-results-bar-chart-container-item-title">Time</div>
+            <div class="individual-results-bar-chart-container-item-selection active-time">This month</div>
+            <div class="individual-results-bar-chart-container-item-selection">Three months</div>
+            <div class="individual-results-bar-chart-container-item-selection">This year</div>
+          </div>
+          <div class="individual-results-bar-chart-container-item" id="individual-results-bar-chart-container-ranking">
+            <div class="individual-results-bar-chart-container-item-title">Ranking</div>
+            <div class="individual-results-bar-chart-container-item-selection active-ranking">Best</div>
+            <div class="individual-results-bar-chart-container-item-selection">Worst</div>
+          </div>
+        </div>
+        <div id="individual-results-bar-chart-container-statistic"></div>
+        <div id="individual-results-title">Market capitalization Dec 2020 - Dec 2021</div>
+        <div id="racing-bar-chart-container-statistic">
+          <div id="date-racechart"></div>
+          <svg id="racing-bar-chart" style="width: 60vw;height: 55vh;"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="documentation">
+    <div class="content">
+      <p class="section_title">Documentation</p>
+      <div id="documentation-container">
+        <div class="documentation-container-item">
+          <p class="documentation-container-item-title">Design-Choices</p>
+          <p class="documentation-container-item-text">In this section several design choices including foundations
+            visual design, fundamental principals of analytical design, data-ink ratio, human perception, tasks in data
+            visualization and intercation concept are covered.
+          </p>
+          <a class="documentation-container-item-link" href="documentation/design_choices.html">learn more...</a>
+        </div>
+        <div class="documentation-container-item">
+          <p class="documentation-container-item-title">Sketch</p>
+          <p class="documentation-container-item-text">In the run-up to the technical implementation, each project team
+            created a sketch showing the planned implementations. This allows the ideas to be tested and feedback
+            gathered without implementation. In this way, misconceptions can be identified at an early stage and without
+            great effort.</p>
+          <a class="documentation-container-item-link" href="documentation/sketch.html">learn more...</a>
+        </div>
+        <div class="documentation-container-item">
+          <p class="documentation-container-item-title">Data</p>
+          <p class="documentation-container-item-text">Logically, data is needed as a basis for data visualisation. In
+            this section, the data used and the data source are explained in more detail. In this project, it is special
+            that the data is retrieved dynamically via an API.</p>
+          <a class="documentation-container-item-link" href="documentation/data.html">learn more...</a>
+        </div>
+        <div class="documentation-container-item">
+          <p class="documentation-container-item-title">Findings</p>
+          <p class="documentation-container-item-text">This web application has the great advantage that the data is
+            loaded dynamically from a rest API and is therefore constantly up-to-date. Thus, there is no static data
+            from which concrete findings can be derived. Therefore, the added value lies in being able to draw your own
+            insights from the current data. We will show you how the data can be interpreted in this article.</p>
+          <a class="documentation-container-item-link" href="documentation/findings.html">learn more...</a>
+        </div>
+        <div class="documentation-container-item">
+          <p class="documentation-container-item-title">References</p>
+          <p class="documentation-container-item-text">In this section all used and helpful resources for this work are
+            listed. Especially for the visualization part were references needed to complete this project.</p>
+          <a class="documentation-container-item-link" href="documentation/references.html">learn more...</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
+
+  <footer>
+    <!--<img src="img/vertical_logo.png" alt="Logo">-->
+    <div class="contact">
+      <div class="title">Contact</div>
+      <div class="person">
+        <div class="name">Simone Lionetti</div>
+        <a href="mailto:simone.lionetti@hslu.ch">Mail ▶</a>
+      </div>
+      <!--
+      <div class="person">
+        <div class="name">Adrian Willi</div>
+        <a href="mailto:adrian.willi@stud.hslu.ch">Mail ▶</a>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <div class="title">Disclaimer</div>
+      <div class="text">This project is part of the Data Visualization (DAVI) lecture at the Lucerne University of
+        applied Sciences. We take no
+        responsibility for any losses. We consider your financial losses to be the result of a misinterpretation of our
+        statistics.</div>
+    </div>
+  -->
+  </footer>
+
+  <!-- REGULAR JAVASCRIPT FILE -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
