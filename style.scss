@@ -1,7 +1,7 @@
 /* COLORS */
 $color_background: #eceff8;
 $color_light_background: #f4f7ff;
-$color_text_dark: #394a69;
+$color_text_dark: #161a22;
 $color_text_light: #bdc2c6;
 $color_primary_pink: #e168c8;
 $color_primary_light_violett: #5b5ec9;
@@ -122,13 +122,24 @@ html {
         }
 
         .call_to_action {
-          font-size: 25px;
+          font-size: 16px;
           font-weight: 700;
           width: 50%;
           text-decoration: none;
           color: $color_primary_orange;
           margin-top: 20px;
         }
+
+        .call_to_action_big {
+          font-size: 24px;
+          font-weight: 700;
+          width: 50%;
+          text-decoration: none;
+          color: $color_primary_orange;
+          margin-top: 20px;
+        }
+
+
 
         /* HOME-SETTINGS */
 
@@ -144,11 +155,11 @@ html {
 
         #about-container {
           display: flex;
-          width: 50%;
+          width: 100%;
           justify-content: space-between;
 
           .about-container-item {
-            width: 45%;
+            width: 95%;
 
             .about-container-item-title {
               font-size: 25px;
@@ -181,11 +192,11 @@ html {
         #use_case-container {
           display: flex;
           margin: auto;
-          width: 90%;
+          width: 100%;
           justify-content: space-between;
 
           .use_case-container-item {
-            width: 30%;
+            width: 95%;
 
             .use_case-container-item-title {
               font-size: 25px;
@@ -198,474 +209,38 @@ html {
               text-align: justify;
               text-justify: inter-word;
             }
-          }
-        }
 
-        /* STATISTICS-SETTINGS */
+            .use_case-container-item-list li{
+              margin-bottom: 1%;
 
-        #statistics-dashboard {
-          margin: auto;
-          width: 100%;
-          border-radius: 20px;
-          padding: 50px;
-          background: $color_light_background;
-
-          .statistics-dashboard-title {
-            font-size: 25px;
-            font-weight: 700;
-          }
-
-          .statistics-dashboard-items {
-            display: grid;
-            grid-template-rows: 0.5fr 2fr;
-            grid-auto-columns: 1fr;
-            grid-gap: 30px;
-            grid-template-areas:
-              "leader rising-star overview"
-              "market market overview";
-
-            .statistics-dashboard-item {
-              background: $color_light_background;
-              border-radius: 20px;
-              box-shadow: 5px 5px 10px rgba($color_text_dark, 0.1);
-              padding: 30px;
-            }
-
-            #leader {
-              grid-area: leader;
-
-              #leader-content {
-                display: grid;
-                grid-auto-rows: 1fr;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                  "title title"
-                  "name growth";
-                align-items: center;
-
-                #leader-content-title {
-                  font-size: 15px;
-                  font-weight: 700;
-
-                  grid-area: title;
-                }
-
-                #leader-content-name {
-                  font-size: 25px;
-                  font-weight: 700;
-
-                  grid-area: name;
-                }
-
-                #leader-content-growth {
-                  font-size: 16px;
-                  font-weight: 700;
-
-                  grid-area: growth;
-
-                  #leader-content-growth-time {
-                    font-size: 12px;
-                  }
-                }
-
-                #leader-support-text {
-                  color: rgba($color: $color_text_dark, $alpha: 0.8);
-                }
-              }
-            }
-
-            #rising-star {
-              grid-area: rising-star;
-
-              #rising-star-content {
-                display: grid;
-                grid-auto-rows: 1fr;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                  "title title"
-                  "name growth";
-                align-items: center;
-
-                #rising-star-content-title {
-                  font-size: 15px;
-                  font-weight: 700;
-
-                  grid-area: title;
-                }
-
-                #rising-star-content-name {
-                  font-size: 25px;
-                  font-weight: 700;
-
-                  grid-area: name;
-                }
-
-                #rising-star-content-growth {
-                  font-size: 16px;
-                  font-weight: 700;
-
-                  grid-area: growth;
-
-                  #rising-star-content-growth-time {
-                    font-size: 12px;
-                  }
-                }
-
-                #rising-star-support-text {
-                  color: rgba($color: $color_text_dark, $alpha: 0.8);
-                }
-              }
-            }
-
-            #market {
-              grid-area: market;
-
-              #market-content {
-                #market-content-title {
-                  font-size: 15px;
-                  font-weight: 700;
-                }
-
-                #market-content-statistic {
-                  margin-left: auto;
-                  margin-right: auto;
-                }
-
-                #market-content-currency-labels {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-
-                  #market-content-bitcoin-currency {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 10px;
-
-                    div {
-                      margin-left: 10px;
-                      margin-right: 10px;
-                    }
-
-                    #market-content-bitcoin-currency-point {
-                      border-radius: 100px;
-                      height: 10px;
-                      width: 10px;
-                      background: red;
-                    }
-
-                    #market-content-bitcoin-currency-name {
-                      font-weight: 700;
-                    }
-                  }
-
-                  #market-content-ethereum-currency {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: 10px;
-
-                    div {
-                      margin-left: 10px;
-                      margin-right: 10px;
-                    }
-
-                    #market-content-ethereum-currency-point {
-                      border-radius: 100px;
-                      height: 10px;
-                      width: 10px;
-                      background: steelblue;
-                    }
-
-                    #market-content-ethereum-currency-name {
-                      font-weight: 700;
-                    }
-                  }
-                }
-              }
-            }
-
-            #overview {
-              grid-area: overview;
-
-              #overview-content {
-                #overview-content-selection {
-                  display: flex;
-                  justify-content: space-around;
-
-                  .overview-content-selection-item {
-                    font-size: 10px;
-                    font-weight: 700;
-                    color: $color_primary_light_violett;
-                    border: 3px solid $color_primary_light_violett;
-                    border-radius: 50px;
-                    padding: 10px 20px 10px 20px;
-                    transition: 0.8s;
-                  }
-
-                  .overview-content-selection-item:hover {
-                    cursor: pointer;
-                  }
-
-                  .active-selection {
-                    background: $color_primary_light_violett;
-                    color: $color_light_background;
-                    transition: 0.8s;
-                  }
-                }
-
-                #overview-content-title {
-                  font-size: 22px;
-                  font-weight: 700;
-                  margin-top: 70px;
-                }
-
-                #overview-content-text {
-                  text-align: justify;
-
-                  #overview-content-text-specification {
-                    color: rgba($color: $color_text_dark, $alpha: 0.8);
-                    font-size: 18px;
-                    font-weight: 700;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        #individual-results {
-          #individual-results-title {
-            margin-top: 200px;
-            font-size: 25px;
-            font-weight: 700;
-            margin-bottom: 50px;
-          }
-
-          #individual-results-subtitle {
-            margin-top: 0px;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 20px;
-          }
-
-          #individual-results-timeline-container {
-            margin: auto;
-            display: grid;
-            align-items: center;
-            grid-template-rows: 0.5fr 5fr 0.5fr;
-            grid-template-columns: 3fr 1fr;
-            grid-template-areas:
-              "selection result"
-              "statistic result"
-              "slider result";
-
-            #individual-results-timeline-container-currency-selection {
-              grid-area: selection;
-              display: flex;
-              justify-content: center;
-
-              .individual-results-timeline-container-currency-selection-item {
-                margin-left: 10px;
-                margin-right: 10px;
-                font-size: 12px;
-                font-weight: 700;
-                color: $color_primary_light_violett;
-                border: 3px solid $color_primary_light_violett;
-                border-radius: 50px;
-                padding: 10px 25px 10px 25px;
-                transition: 0.8s;
-              }
-
-              .individual-results-timeline-container-currency-selection-item:hover {
-                cursor: pointer;
-              }
-
-              .currency-selection {
-                background: $color_primary_light_violett;
-                color: $color_light_background;
-                transition: 0.8s;
-              }
-            }
-
-            #individual-results-timeline-container-statistic {
-              grid-area: statistic;
-              margin-top: 50px;
-              margin-right: 50px;
-            }
-
-            #individual-results-timeline-container-currency-result {
-              grid-area: result;
-
-              #individual-results-timeline-container-currency-result-first-item {
-                margin-bottom: 50px;
-
-                #individual-results-timeline-container-currency-result-first-item-title {
-                  display: flex;
-                  align-items: center;
-
-                  div {
-                    margin-left: 5px;
-                    margin-right: 5px;
-                  }
-
-                  #individual-results-timeline-container-currency-result-first-item-title-point {
-                    border-radius: 100px;
-                    height: 10px;
-                    width: 10px;
-                    background: red;
-                  }
-
-                  #individual-results-timeline-container-currency-result-first-item-title-text-coin1 {
-                    font-size: 20px;
-                    font-weight: 700;
-                  }
-                }
-              }
-
-              #individual-results-timeline-container-currency-result-second-item {
-                #individual-results-timeline-container-currency-result-second-item-title {
-                  display: flex;
-                  align-items: center;
-
-                  div {
-                    margin-left: 5px;
-                    margin-right: 5px;
-                  }
-
-                  #individual-results-timeline-container-currency-result-second-item-title-point {
-                    border-radius: 100px;
-                    height: 10px;
-                    width: 10px;
-                    background: steelblue;
-                  }
-
-                  #individual-results-timeline-container-currency-result-second-item-title-text-coin2 {
-                    font-size: 20px;
-                    font-weight: 700;
-                  }
-                }
-              }
-
-              .individual-results-timeline-container-currency-result-item-information {
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 2;
-              }
-            }
-
-            #individual-results-timeline-container-slider {
-              margin: auto;
-              grid-area: slider;
-
-              #amount {
-                font-weight: 700;
+              .mailcommittee {
                 font-size: 16px;
-              }
-
-              #slider-range {
-                width: 500px;
-              }
-            }
-          }
-
-          #individual-results-bar-chart-container {
-            display: flex;
-            justify-content: space-around;
-
-            .individual-results-bar-chart-container-item {
-              .individual-results-bar-chart-container-item-title {
-                font-size: 25px;
                 font-weight: 700;
+                text-decoration: none;
+                color: $color_primary_orange;
               }
 
-              .individual-results-bar-chart-container-item-selection {
-                height: 12px;
-                text-align: center;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 12px;
+              .namecommittee {
+                font-size: 16px;
                 font-weight: 700;
-                color: $color_primary_light_violett;
-                border: 3px solid $color_primary_light_violett;
-                border-radius: 50px;
-                padding: 10px 25px 10px 25px;
-                transition: 0.8s;
-                cursor: pointer;
+                text-decoration: none;
+                color: $color_text_dark;
+              
               }
 
-              .hover-text {
-                visibility: hidden;
-                width: 400px;
-                line-height: 1.5;
-                background-color: $color_text_dark;
-                color: white;
-                text-align: center;
-                border-radius: 10px;
-                padding: 10px;
-
-                /* Position the tooltip */
-                position: absolute;
-                z-index: 1;
-              }
-
-              .individual-results-bar-chart-container-item-selection:hover + .hover-text {
-                visibility: visible;
-              }
-
-              .active-information {
-                background: $color_primary_light_violett;
-                color: $color_light_background;
-                transition: 0.8s;
-              }
-
-              .active-ranking {
-                background: $color_primary_light_violett;
-                color: $color_light_background;
-                transition: 0.8s;
-              }
-
-              .active-time {
-                background: $color_primary_light_violett;
-                color: $color_light_background;
-                transition: 0.8s;
-              }
-            }
-          }
-
-          #individual-results-bar-chart-container-statistic {
-            margin-top: 50px;
-            .bar--positive {
-              fill: steelblue;
+                  
             }
 
-            .bar--negative {
-              fill: steelblue;
-            }
+           
+           
 
-            .axis text {
-              font-family: "Raleway", sans-serif;
-              font-size: 12px;
-              font-weight: 700;
-            }
-          }
-
-          #racing-bar-chart-container-statistic{
-            width: 100%;
-            text-align: center;
             
-            #date-racechart {
-              font-size: 16px;
-              font-weight: 700;
-              margin-bottom: 20px;
-
-              #current-month{
-                font-size: 18px;
-                color: steelblue;
-              }
-            }
+  
+            
           }
         }
+
+        
 
         /* DOCUMENTATION-SETTINGS */
 
@@ -749,26 +324,4 @@ html {
       }
     }
   }
-}
-
-/**
-  * D3-SETTINGS
-  */
-.x-label {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-path {
-  stroke: steelblue;
-  stroke-width: 2;
-  fill: none;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: grey;
-  stroke-width: 1;
-  shape-rendering: crispEdges;
 }

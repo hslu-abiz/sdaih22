@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>sdaih22</title>
+  <title>SDAIH 2022</title>
 
   <!-- FavIcon -->
   <!--<link rel="icon" type="image/x-icon" href="img/favicon-32x32.ico">-->
@@ -35,13 +35,14 @@
   <nav>
     <!--<img src="img/horizontal_logo.png" onclick="logoClicked()" alt="Logo" id="header-logo">-->
     <div id="underline"></div>
-    <!--
+
     <a href="#home" id="active" class="menu-home">Home</a>
     <a href="#about" id="" class="menu-about">About</a>
-    <a href="#use_case" id="" class="menu-usecase">Problem Definition</a>
-    <a href="#statistics" id="" class="menu-statistics">Visualization</a>
-    <a href="#documentation" id="" class="menu-documentation">Documentation</a>
-    -->
+    <a href="#callforpapers" id="" class="menu-callforpapers">Call for papers</a>
+    <a href="#schedule" id="" class="menu-schedule">Schedule</a>
+    <a href="#committee" id="" class="menu-committee">Committee</a>
+    <!--<a href="#documentation" id="" class="menu-documentation">Documentation</a>-->
+
   </nav>
 
   <script type="text/javascript">
@@ -87,7 +88,7 @@
       }
 
       function reset_navbar(except_current_menu) {
-        const menu_points = [".menu-home", ".menu-about", ".menu-usecase", ".menu-statistics", ".menu-documentation"];
+        const menu_points = [".menu-home", ".menu-about", ".menu-callforpapers", ".menu-schedule", ".menu-committee"];
         menu_points.forEach(element => {
           let active_element = document.querySelector(element)
           if (active_element.id != "")
@@ -97,8 +98,8 @@
       //your code
       var homebottom = $('#home').offset().top + $('#home').height();
       var aboutbottom = $('#about').offset().top + $('#about').height();
-      var usecasebottom = $('#use_case').offset().top + $('#use_case').height();
-      var statisticsbottom = $('#statistics').offset().top + $('#statistics').height();
+      var usecasebottom = $('#callforpapers').offset().top + $('#callforpapers').height();
+      var statisticsbottom = $('#schedule').offset().top + $('#schedule').height();
 
       // initial call
       let active_element = document.querySelector('.menu-home');
@@ -121,18 +122,18 @@
           }
 
           if (stop > aboutbottom) {
-            reset_navbar(".menu-usecase");
-            var active_element = document.querySelector('.menu-usecase')
+            reset_navbar(".menu-callforpapers");
+            var active_element = document.querySelector('.menu-callforpapers')
             active_element.id = "active";
           }
           if (stop > usecasebottom) {
-            reset_navbar(".menu-statistics");
-            var active_element = document.querySelector('.menu-statistics')
+            reset_navbar(".menu-schedule");
+            var active_element = document.querySelector('.menu-schedule')
             active_element.id = "active";
           }
           if (stop > statisticsbottom) {
-            reset_navbar(".menu-documentation");
-            var active_element = document.querySelector('.menu-documentation')
+            reset_navbar(".menu-committee");
+            var active_element = document.querySelector('.menu-committee')
             active_element.id = "active";
           }
 
@@ -147,275 +148,180 @@
 
   <section id="home">
     <div class="content">
-      <p class="intro">Workshop for IJCAI–ECAI 2022</p>
+      <p class="intro">Workshop for IJCAI–ECAI 2022 <br> July 23-25, 2022 in Vienna</p>
       <p class="home_title">Scarce Data in Artificial Intelligence for Healthcare
         (SDAIH)</p>
-        <!--
-      <p class="sub_title">Will you become rich using CURRENTCY without any extra work? No, but we provide you current
-        crypto currency rates in an interactively designed dashboard enriched with helpful extra metrics...<br><br>
       
-      </p>-->
-      <a href="#" class="call_to_action">Soon more information</a>
-     <!-- <img id="home_image" src="img/home.png" alt="Background image"> -->
+      <p class="sub_title">
+      </p>
+      <a href="#callforpapers" class="call_to_action_big">Submit your paper now ▶</a>
+      <!-- <img id="home_image" src="img/home.png" alt="Background image"> -->
     </div>
   </section>
 
-  <!--
+
   <section id="about">
     <div class="content">
       <p class="section_title">About</p>
       <div id="about-container">
         <div class="about-container-item">
-          <p class="about-container-item-title">Who we are...</p>
-          <p class="about-container-item-text"><strong><a href="mailto:nico.iseli@stud.hslu.ch">Nico Iseli</a></strong>
-            (left) is finishing his bachelor program this
-            semester. Afterwards he will start a new challenge in the industry as an UX Designer.<br><br><br>One on his
-            own is practically
-            worthless. Nico works on this project together with <strong><a
-                href="mailto:adrian.willi@stud.hslu.ch">Adrian Willi</a></strong> (right). He is also in his
-            last semester of the bachelors
-            program. In contrast to Nico he is going to continue studying.</p>
-        </div>
-        <div class="about-container-item">
-          <p class="about-container-item-title">What we do...</p>
-          <p class="about-container-item-text">Nico's primary area of ​​interest is UX design. In his leisure time he is
-            passionate about going outdoors.<br><br>During
-            the bachelor program Adrian focused mainly on Visual Computing
-            and Artificial Intelligence. When not studying then he likes cycling and running<br><br></p>
+          <p class="about-container-item-text">
+            AI has the potential to generate a revolution in the field of healthcare by enabling accurate,
+            fast and reliable analyses of data at an unprecedented scale both in the clinics and in industry.
+            Leveraged properly, AI can thus allow to better meet patient needs by developing new medical
+            devices, drugs, and personalized treatments, while simultaneously freeing up time for clinical
+            staff to nourish the profound human connection between caregivers and patients. Moreover,
+            AI promises to democratize the healthcare system by spreading basic services to low-income or
+            remote areas through telemedicine. <br><br>
+            Notwithstanding the terrific progress achieved in the last two decades, many AI projects
+            related to medicine struggle to make their way to deployment and sustainable productivity
+            because of the limited availability of high-quality annotated data. The scarcity of useful information
+            is often exacerbated in medicine, medical engineering, and healthcare in general because
+            labelling requires highly-specialized staff, patient privacy must be respected, ethnic differences
+            and rare diseases adequately represented. Despite the incredible advances of the last few years
+            in facilitating data collection and annotation, learning representations, and detecting different
+            types of bias, basic observations on implications for practitioners are often lacking, new
+            ingenious ideas are flourishing, and recommendations for healthcare are far from established. <br><br>
+            The goal of this workshop is to exchange learnings and efforts on how to solve the issue of
+            data scarcity for the practical deployment of AI in healthcare. We aim at bringing together,
+            from both academia and industry, researchers and data scientists that are confronted with challenges
+            related to limited data availability for machine learning in medicine, medical engineering,
+            biotechnology, pharmaceuticals, and medical services.
+          </p>
+          
         </div>
       </div>
-      <img id="about_image" src="img/about.png" alt="About image">
+
     </div>
 
   </section>
 
-  <section id="use_case">
+
+
+  <section id="callforpapers">
     <div class="content">
-      <p class="section_title">Problem Definition</p>
+      <p class="section_title">Call for papers</p>
       <div id="use_case-container">
         <div class="use_case-container-item">
-          <p class="use_case-container-item-title">Problem Description</p>
-          <p class="use_case-container-item-text">Nowadays we have an <strong>information overload</strong> in the field
-            of crytocurrencies. It is hard to find the information you are looking for within a short time. Furthermore
-            most of the cryptocurrency platforms have no option for highly interactive dashboards. Normally they ask for
-            an account to get access to such options if they are available. For this reason <strong>trading with
-              cryptocurrencies can be frustrating</strong> and very time consuming.</p>
-        </div>
-        <div class="use_case-container-item">
-          <p class="use_case-container-item-title">Target-Group</p>
-          <p class="use_case-container-item-text"> This site is made for people who have an <strong>interest in
-              cryptocurrencies</strong>. It doesn't matter if they are professionals or beginners in this field.
-            Especially suitable is the site if you have little time and want to find the information you are looking for
-            quickly.</p>
-        </div>
-        <div class="use_case-container-item">
-          <p class="use_case-container-item-title">Objective & Vision</p>
-          <p class="use_case-container-item-text"> The goal is to provide a <strong>highly interactive
-              dashboard</strong> with real time data. Every user should find the desired metric quickly to save time.
-            This page is intended to help people find their way through the flood of information without missing
-            important information. In addition, the site should be <strong>easy to use</strong>.
+          <p class="use_case-container-item-title">Submission</p>
+          <p class="use_case-container-item-text">We welcome the submission of original research reports within the
+            topics of interest of the
+            workshop. The maximum length of papers is fixed to <strong>6 pages including references.</strong> We
+            especially
+            encourage the contribution of case studies, work in progress, position papers, and critical
+            analyses of failed projects. <br><br>
+            <strong>Note on proceedings publication</strong> We are in contact with multiple publishers to find the
+            most suitable option for a proceedings volume, and with potential sponsors to fund open access
+            publication of all accepted papers. This will also determine the details concerning format
+            requirements. <br><br>
+            <p class="use_case-container-item-text">
+              <strong>Paper submission deadline:</strong> May 13, 2022 <br>
+              <strong>Decision notification:</strong> June 3, 2022<br>
+              <strong>Camera-ready submission:</strong> June 17, 2022<br><br>
+            </p>
+            <a href="#" class="call_to_action">Link to submission (not working yet)</a>
+          </p><br>
+  
+          <p class="use_case-container-item-title">Topics of interest</p>
+          <p class="use_case-container-item-text">
+            Topics of interest include, but are not limited to:
+          <ul class="use_case-container-item-list">
+            <li>Publication of datasets relevant to healthcare including text, images, audio and structured
+              data.</li>
+            <li>Hardware and software tools for enabling data acquisition in low-resource or restricted
+              environments, such as federated annotations and pseudonimization techniques.</li>
+            <li>Tools to produce or evaluate high-quality clinical annotations and consensus diagnoses.</li>
+            <li>Critical analysis of iterative procedures to clean up or refine annotations, as well as
+              guidelines to assess the uncertainty on metric scores.</li>
+            <li>Anonymization methods for intra- and inter-institutional data exchange.</li>
+            <li>Technical solutions to work in the presence of legal concerns, for instance federated learning
+              and i2b2.</li>
+            <li>Works on learning representations or transfer learning with a focus on improving model
+              generalization across different patient cohorts, data acquisition conditions, medical expert
+              evaluations etc.</li>
+            <li>Studies which compare or combine learning from nature with learning from human experts.</li>
+            <li>Works on unsupervised, self-supervised, semi-supervised, or few-shot learning aimed e.g.
+              at reducing the need for annotations by specialists.</li>
+            <li>Methods to deal with strongly imbalanced datasets such as those including rare diseases,
+              or very small pathological features in medical image collections.</li>
+            <li>Strategies to handle scarcity of subsets in large datasets, i.e. “filling the gaps”.</li>
+            <li>Works on using public or artificially-generated datasets to improve the performance of
+              machine-learning models in healthcare or to mitigate (patient) privacy issues.</li>
+            <li>Case studies linked to the practical deployment of AI in a clinical setting or in medical
+              devices with limited data, as well as to the construction of pipelines or databases for
+              addressing data scarcity.</li>
+            <li>Insightful, original analyses of reasons for the failure of AI projects in healthcare, and
+              work-in-progress reports of efforts related to the themes listed above.</li>
+          </ul>
           </p>
+
+
+
         </div>
+
+
       </div>
     </div>
   </section>
 
-  <section id="statistics">
+  <section id="schedule">
     <div class="content">
-      <p class="section_title">Visualization</p>
-      <div id="statistics-dashboard">
-        <div class="statistics-dashboard-title">Dashboard</div>
-        <div class="statistics-dashboard-items">
-          <div class="statistics-dashboard-item" id="leader">
-            <div id="leader-content">
-              <div id="leader-content-title"></div>
-              <p id="leader-content-name">Bitcoin</p>
-              <p id="leader-content-growth"><span id="leader-content-growth-number"></span><span
-                  id="leader-content-growth-time"></span></p>
-            </div>
-          </div>
-          <div class="statistics-dashboard-item" id="rising-star">
-            <div id="rising-star-content">
-              <div id="rising-star-content-title"></div>
-              <p id="rising-star-content-name">Ethereum</p>
-              <p id="rising-star-content-growth"><span id="rising-star-content-growth-number"></span><span
-                  id="rising-star-content-growth-time"></span></p>
-            </div>
-          </div>
-          <div class="statistics-dashboard-item" id="market">
-            <div id="market-content">
-              <div id="market-content-title">The Market</div>
-              <div id="market-content-statistic">
-
-              </div>
-              <div id="market-content-currency-labels">
-                <div id="market-content-bitcoin-currency">
-                  <div id="market-content-bitcoin-currency-point"></div>
-                  <div id="market-content-bitcoin-currency-name">Bitcoin</div>
-                </div>
-                <div id="market-content-ethereum-currency">
-                  <div id="market-content-ethereum-currency-point"></div>
-                  <div id="market-content-ethereum-currency-name">Ethereum</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="statistics-dashboard-item" id="overview">
-            <div id="overview-content">
-              <div id="overview-content-selection">
-                <div class="overview-content-selection-item">This week</div>
-                <div class="overview-content-selection-item active-selection">This month</div>
-                <div class="overview-content-selection-item">This year</div>
-              </div>
-              <div id="overview-content-title">About the Dashboard</div>
-              <p id="overview-content-text"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="individual-results">
-        <div id="individual-results-title">Coin-Based Time-Series</div>
-        <div id="individual-results-subtitle">Select two coins</div>
-        <div id="individual-results-timeline-container">
-          <div id="individual-results-timeline-container-currency-selection">
-            <div class="individual-results-timeline-container-currency-selection-item currency-selection">Bitcoin</div>
-            <div class="individual-results-timeline-container-currency-selection-item currency-selection">Ethereum</div>
-            <div class="individual-results-timeline-container-currency-selection-item">BNB</div>
-            <div class="individual-results-timeline-container-currency-selection-item">Solana</div>
-            <div class="individual-results-timeline-container-currency-selection-item">Tether</div>
-            <div class="individual-results-timeline-container-currency-selection-item">Cardano</div>
-          </div>
-          <div id="individual-results-timeline-container-statistic">
-
-          </div>
-          <div id="individual-results-timeline-container-currency-result">
-            <div id="individual-results-timeline-container-currency-result-first-item">
-              <div id="individual-results-timeline-container-currency-result-first-item-title">
-                <div id="individual-results-timeline-container-currency-result-first-item-title-point"></div>
-                <div id="individual-results-timeline-container-currency-result-first-item-title-text-coin1"></div>
-              </div>
-              <div id="individual-results-timeline-container-currency-result-first-item-max"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-              <div id="individual-results-timeline-container-currency-result-first-item-min"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-              <div id="individual-results-timeline-container-currency-result-first-item-avg"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-            </div>
-            <div id="individual-results-timeline-container-currency-result-second-item">
-              <div id="individual-results-timeline-container-currency-result-second-item-title">
-                <div id="individual-results-timeline-container-currency-result-second-item-title-point"></div>
-                <div id="individual-results-timeline-container-currency-result-second-item-title-text-coin2"></div>
-              </div>
-              <div id="individual-results-timeline-container-currency-result-second-item-max"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-              <div id="individual-results-timeline-container-currency-result-second-item-min"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-              <div id="individual-results-timeline-container-currency-result-second-item-avg"
-                class="individual-results-timeline-container-currency-result-item-information"></div>
-            </div>
-            <div id="individual-results-timeline-container-currency-result-item"></div>
-          </div>
-          <div id="individual-results-timeline-container-slider">
-            <p id="amount"></p>
-            <div id="slider-range"></div>
-          </div>
-        </div>
-        <div id="individual-results-title">Metric-Based Ranking of Crypto Currencies</div>
-
-
-        <div id="individual-results-bar-chart-container">
-          <div class="individual-results-bar-chart-container-item"
-            id="individual-results-bar-chart-container-information">
-            <div class="individual-results-bar-chart-container-item-title">Information</div>
-            <div class="individual-results-bar-chart-container-item-selection active-information">Growth</div>
-            <div class="hover-text">The growth expresses how much the price of the respective cryptocurrency decreased
-              or increased on average in the specified period. The figure is given as a percentage.</div>
-            <div class="individual-results-bar-chart-container-item-selection">Risk</div>
-            <div class="hover-text">In this evaluation the risk stands for the "Sharpe Ratio". In finance, the Sharpe
-              ratio measures the performance of an investment compared to a risk-free asset, after adjusting for its
-              risk. It is defined as the difference
-              between the return on investment (ROI) and the risk-free return, divided by the standard deviation of the
-              investment returns. It represents the additional amount of return that an investor receives per unit of
-              increase in risk.</div>
-            <div class="individual-results-bar-chart-container-item-selection">Volatility</div>
-            <div class="hover-text">Volatility is defined as the annualized standard-deviation of daily
-              returns<br><br>The higher this value, the more fluctuations the coin had. </div>
-          </div>
-          <div class="individual-results-bar-chart-container-item" id="individual-results-bar-chart-container-time">
-            <div class="individual-results-bar-chart-container-item-title">Time</div>
-            <div class="individual-results-bar-chart-container-item-selection active-time">This month</div>
-            <div class="individual-results-bar-chart-container-item-selection">Three months</div>
-            <div class="individual-results-bar-chart-container-item-selection">This year</div>
-          </div>
-          <div class="individual-results-bar-chart-container-item" id="individual-results-bar-chart-container-ranking">
-            <div class="individual-results-bar-chart-container-item-title">Ranking</div>
-            <div class="individual-results-bar-chart-container-item-selection active-ranking">Best</div>
-            <div class="individual-results-bar-chart-container-item-selection">Worst</div>
-          </div>
-        </div>
-        <div id="individual-results-bar-chart-container-statistic"></div>
-        <div id="individual-results-title">Market capitalization Dec 2020 - Dec 2021</div>
-        <div id="racing-bar-chart-container-statistic">
-          <div id="date-racechart"></div>
-          <svg id="racing-bar-chart" style="width: 60vw;height: 55vh;"></svg>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="documentation">
-    <div class="content">
-      <p class="section_title">Documentation</p>
-      <div id="documentation-container">
-        <div class="documentation-container-item">
-          <p class="documentation-container-item-title">Design-Choices</p>
-          <p class="documentation-container-item-text">In this section several design choices including foundations
-            visual design, fundamental principals of analytical design, data-ink ratio, human perception, tasks in data
-            visualization and intercation concept are covered.
+      <p class="section_title">Schedule</p>
+      <div id="about-container">
+        <div class="about-container-item">
+          <p class="about-container-item-text">
+            Schedule follows soon
           </p>
-          <a class="documentation-container-item-link" href="documentation/design_choices.html">learn more...</a>
+          
         </div>
-        <div class="documentation-container-item">
-          <p class="documentation-container-item-title">Sketch</p>
-          <p class="documentation-container-item-text">In the run-up to the technical implementation, each project team
-            created a sketch showing the planned implementations. This allows the ideas to be tested and feedback
-            gathered without implementation. In this way, misconceptions can be identified at an early stage and without
-            great effort.</p>
-          <a class="documentation-container-item-link" href="documentation/sketch.html">learn more...</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="committee">
+    <div class="content">
+      <p class="section_title">Committee</p>
+      <div id="use_case-container">
+        <div class="use_case-container-item">
+          <p class="use_case-container-item-text">
+          <ul class="use_case-container-item-list">
+            <li><a href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=4484" class="namecommittee">Simone Lionetti</a>  <br>Lucerne University of Applied Sciences and Arts <br> <a href="mailto:simone.lionetti@hslu.ch" class="mailcommittee">Mail ▶ </a><br>+41 41 757 68 76 <br> <br></li>
+
+            <li><a href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=1494" class="namecommittee">Marc Pouly</a> <br>Lucerne University of Applied Sciences and Arts <br> <a href="mailto:marc.pouly@hslu.ch" class="mailcommittee">Mail ▶</a><br><br></li>
+
+            <li><a href="https://dbe.unibas.ch/en/persons/alexander-navarini/" class="namecommittee">Alexander Navarini</a><br> University of Basel  <br> <a href="mailto:alexander.navarini@usb.ch" class="mailcommittee">Mail ▶</a><br><br></li>
+
+            <li><a href="https://www.meduniwien.ac.at/web/forschung/researcher-profiles/researcher-profiles/index.php?id=688&res=philipp_tschandl" class="namecommittee">Philipp Tschandl</a> <br>Medical University of Vienna <br> <a href="mailto:philipp.tschandl@meduniwien.ac.at" class="mailcommittee">Mail ▶</a></li>
+
+            
+          </ul>
+          </p>
+
+
+
         </div>
-        <div class="documentation-container-item">
-          <p class="documentation-container-item-title">Data</p>
-          <p class="documentation-container-item-text">Logically, data is needed as a basis for data visualisation. In
-            this section, the data used and the data source are explained in more detail. In this project, it is special
-            that the data is retrieved dynamically via an API.</p>
-          <a class="documentation-container-item-link" href="documentation/data.html">learn more...</a>
-        </div>
-        <div class="documentation-container-item">
-          <p class="documentation-container-item-title">Findings</p>
-          <p class="documentation-container-item-text">This web application has the great advantage that the data is
-            loaded dynamically from a rest API and is therefore constantly up-to-date. Thus, there is no static data
-            from which concrete findings can be derived. Therefore, the added value lies in being able to draw your own
-            insights from the current data. We will show you how the data can be interpreted in this article.</p>
-          <a class="documentation-container-item-link" href="documentation/findings.html">learn more...</a>
-        </div>
-        <div class="documentation-container-item">
-          <p class="documentation-container-item-title">References</p>
-          <p class="documentation-container-item-text">In this section all used and helpful resources for this work are
-            listed. Especially for the visualization part were references needed to complete this project.</p>
-          <a class="documentation-container-item-link" href="documentation/references.html">learn more...</a>
-        </div>
+
+
       </div>
     </div>
   </section>
 
--->
+
+
 
   <footer>
     <!--<img src="img/vertical_logo.png" alt="Logo">-->
     <div class="contact">
-      <div class="title">Contact</div>
+      <div class="title">SDAIH 2022</div>
+      <!--
       <div class="person">
-        <div class="name">Simone Lionetti</div>
+        <div class="name">Simone Lionetti <br>
+          +41 41 757 68 76</div>
         <a href="mailto:simone.lionetti@hslu.ch">Mail ▶</a>
+        -->
       </div>
       <!--
       <div class="person">
