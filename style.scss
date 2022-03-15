@@ -95,6 +95,7 @@ html {
           padding: 0;
           font-size: 25px;
           font-weight: 700;
+          color: #bdc2c6;
         }
 
         .home_title {
@@ -103,6 +104,7 @@ html {
           padding: 0;
           font-size: 70px;
           font-weight: 700;
+          color: #bdc2c6;
         }
 
         .section_title {
@@ -131,7 +133,7 @@ html {
         }
 
         .call_to_action_big {
-          font-size: 24px;
+          font-size: 28px;
           font-weight: 700;
           width: 50%;
           text-decoration: none;
@@ -145,7 +147,7 @@ html {
 
         #home_image {
           position: absolute;
-          width: 50%;
+          width: 100%;
           top: 0;
           right: 0;
           z-index: -1000;
