@@ -148,6 +148,7 @@ html {
         #home_image {
           position: absolute;
           height: 100%;
+          width: 100%;
           top: 0;
           right: 0;
           z-index: -1000;
@@ -164,9 +165,6 @@ html {
           .about-container-item {
             width: 95%;
 
-            #about-image {
-              width: 100%;
-            }
 
             .about-container-item-title {
               font-size: 25px;
@@ -181,6 +179,10 @@ html {
               a {
                 color: $color_primary_orange;
                 text-decoration: none;
+              }
+
+              #about-image {
+                width: 100%;
               }
             }
           }
@@ -199,9 +201,7 @@ html {
           .use_case-container-item {
             width: 95%;
 
-            #use_case-image {
-              width: 100%;
-            }
+           
 
             .use_case-container-item-title {
               font-size: 25px;
@@ -213,6 +213,10 @@ html {
               line-height: 1.5;
               text-align: justify;
               text-justify: inter-word;
+
+              #use_case-image {
+                width: 100%;
+              }
             }
 
             .use_case-container-item-list li{

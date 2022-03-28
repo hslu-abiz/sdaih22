@@ -145,6 +145,7 @@ html body section .content .call_to_action_big {
 html body section .content #home_image {
   position: absolute;
   height: 100%;
+  width: 100%;
   top: 0;
   right: 0;
   z-index: -1000;
@@ -164,10 +165,6 @@ html body section .content #about-container .about-container-item {
   width: 95%;
 }
 
-html body section .content #about-container .about-container-item #about-image {
-  width: 100%;
-}
-
 html body section .content #about-container .about-container-item .about-container-item-title {
   font-size: 25px;
   font-weight: 700;
@@ -185,6 +182,10 @@ html body section .content #about-container .about-container-item .about-contain
   text-decoration: none;
 }
 
+html body section .content #about-container .about-container-item .about-container-item-text #about-image {
+  width: 100%;
+}
+
 html body section .content #use_case-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,10 +201,6 @@ html body section .content #use_case-container .use_case-container-item {
   width: 95%;
 }
 
-html body section .content #use_case-container .use_case-container-item #use_case-image {
-  width: 100%;
-}
-
 html body section .content #use_case-container .use_case-container-item .use_case-container-item-title {
   font-size: 25px;
   font-weight: 700;
@@ -214,6 +211,10 @@ html body section .content #use_case-container .use_case-container-item .use_cas
   line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
+}
+
+html body section .content #use_case-container .use_case-container-item .use_case-container-item-text #use_case-image {
+  width: 100%;
 }
 
 html body section .content #use_case-container .use_case-container-item .use_case-container-item-list li {
