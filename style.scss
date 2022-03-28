@@ -147,10 +147,11 @@ html {
 
         #home_image {
           position: absolute;
-          width: 100%;
+          height: 100%;
           top: 0;
           right: 0;
           z-index: -1000;
+
         }
 
         /* ABOUT-SETTINGS */
@@ -162,6 +163,10 @@ html {
 
           .about-container-item {
             width: 95%;
+
+            #about-image {
+              width: 100%;
+            }
 
             .about-container-item-title {
               font-size: 25px;
@@ -181,13 +186,7 @@ html {
           }
         }
 
-        #about_image {
-          position: absolute;
-          top: 150px;
-          right: 0;
-          width: 50%;
-          z-index: -1000;
-        }
+
 
         /* USE-CASE-SETTINGS */
 
@@ -199,6 +198,10 @@ html {
 
           .use_case-container-item {
             width: 95%;
+
+            #use_case-image {
+              width: 100%;
+            }
 
             .use_case-container-item-title {
               font-size: 25px;
