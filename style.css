@@ -76,7 +76,7 @@ html body nav #header-logo {
 html body section {
   z-index: 2;
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
   padding-top: 200px;
 }
 
@@ -86,8 +86,9 @@ html body section .content {
   /* GENERAL CONTENT SETTINGS */
   /* HOME-SETTINGS */
   /* ABOUT-SETTINGS */
-  /* USE-CASE-SETTINGS */
-  /* DOCUMENTATION-SETTINGS */
+  /* CALL-FOR-PAPERS-SETTINGS */
+  /* SCHEDULE-SETTINGS */
+  /* COMMITTEE-SETTINGS */
 }
 
 html body section .content .intro {
@@ -146,6 +147,7 @@ html body section .content #home_image {
   position: absolute;
   height: 100%;
   width: 100%;
+  min-height: 100vh;
   top: 0;
   right: 0;
   z-index: -1000;
@@ -186,7 +188,7 @@ html body section .content #about-container .about-container-item .about-contain
   width: 100%;
 }
 
-html body section .content #use_case-container {
+html body section .content #callforpapers-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,66 +199,112 @@ html body section .content #use_case-container {
           justify-content: space-between;
 }
 
-html body section .content #use_case-container .use_case-container-item {
+html body section .content #callforpapers-container .callforpapers-container-item {
   width: 95%;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-title {
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-title {
   font-size: 25px;
   font-weight: 700;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-text {
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-text #use_case-image {
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-text #callforpapers-image {
   width: 100%;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-list li {
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-list li {
   margin-bottom: 1%;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-list li .mailcommittee {
+html body section .content #schedule-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #schedule-container .schedule-container-item {
+  width: 95%;
+}
+
+html body section .content #schedule-container .schedule-container-item .schedule-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #schedule-container .schedule-container-item .schedule-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #schedule-container .schedule-container-item .schedule-container-item-text #schedule-image {
+  width: 100%;
+}
+
+html body section .content #schedule-container .schedule-container-item .schedule-container-item-list li {
+  margin-bottom: 2%;
+}
+
+html body section .content #committee-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #committee-container .committee-container-item {
+  width: 95%;
+}
+
+html body section .content #committee-container .committee-container-item .committee-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #committee-container .committee-container-item .committee-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #committee-container .committee-container-item .committee-container-item-text #committee-image {
+  width: 100%;
+}
+
+html body section .content #committee-container .committee-container-item .committee-container-item-list li {
+  margin-bottom: 1%;
+}
+
+html body section .content #committee-container .committee-container-item .committee-container-item-list li .mailcommittee {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: #f36454;
 }
 
-html body section .content #use_case-container .use_case-container-item .use_case-container-item-list li .namecommittee {
+html body section .content #committee-container .committee-container-item .committee-container-item-list li .namecommittee {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: #161a22;
-}
-
-html body section .content #documentation-container {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 100px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-html body section .content #documentation-container .documentation-container-item .documentation-container-item-title {
-  font-weight: 700;
-  font-size: 25px;
-}
-
-html body section .content #documentation-container .documentation-container-item .documentation-container-item-text {
-  text-align: justify;
-  line-height: 1.5;
-}
-
-html body section .content #documentation-container .documentation-container-item .documentation-container-item-link {
-  font-weight: 700;
-  text-decoration: none;
-  color: #f36454;
 }
 
 html body footer {

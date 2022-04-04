@@ -80,7 +80,7 @@ html {
     section {
       z-index: 2;
       position: relative;
-      min-height: 100vh;
+      min-height: 85vh;
       padding-top: 200px;
 
       .content {
@@ -141,14 +141,13 @@ html {
           margin-top: 20px;
         }
 
-
-
         /* HOME-SETTINGS */
 
         #home_image {
           position: absolute;
           height: 100%;
           width: 100%;
+          min-height: 100vh;
           top: 0;
           right: 0;
           z-index: -1000;
@@ -164,7 +163,6 @@ html {
 
           .about-container-item {
             width: 95%;
-
 
             .about-container-item-title {
               font-size: 25px;
@@ -188,38 +186,101 @@ html {
           }
         }
 
+        /* CALL-FOR-PAPERS-SETTINGS */
 
-
-        /* USE-CASE-SETTINGS */
-
-        #use_case-container {
+        #callforpapers-container {
           display: flex;
           margin: auto;
           width: 100%;
           justify-content: space-between;
 
-          .use_case-container-item {
+          .callforpapers-container-item {
             width: 95%;
 
-           
-
-            .use_case-container-item-title {
+            .callforpapers-container-item-title {
               font-size: 25px;
               font-weight: 700;
             }
 
-            .use_case-container-item-text {
+            .callforpapers-container-item-text {
               font-size: 16px;
               line-height: 1.5;
               text-align: justify;
               text-justify: inter-word;
 
-              #use_case-image {
+              #callforpapers-image {
                 width: 100%;
               }
             }
 
-            .use_case-container-item-list li{
+            .callforpapers-container-item-list li{
+              margin-bottom: 1%;                  
+            }     
+          }
+        }
+
+        /* SCHEDULE-SETTINGS */
+
+        #schedule-container {
+          display: flex;
+          margin: auto;
+          width: 100%;
+          justify-content: space-between;
+
+          .schedule-container-item {
+            width: 95%;
+
+            .schedule-container-item-title {
+              font-size: 25px;
+              font-weight: 700;
+            }
+
+            .schedule-container-item-text {
+              font-size: 16px;
+              line-height: 1.5;
+              text-align: justify;
+              text-justify: inter-word;
+
+              #schedule-image {
+                width: 100%;
+              }
+            }
+
+            .schedule-container-item-list li{
+              margin-bottom: 2%;
+                  
+            }            
+          }
+        }
+
+         /* COMMITTEE-SETTINGS */
+
+         #committee-container {
+          display: flex;
+          margin: auto;
+          width: 100%;
+          justify-content: space-between;
+
+          .committee-container-item {
+            width: 95%;
+
+            .committee-container-item-title {
+              font-size: 25px;
+              font-weight: 700;
+            }
+
+            .committee-container-item-text {
+              font-size: 16px;
+              line-height: 1.5;
+              text-align: justify;
+              text-justify: inter-word;
+
+              #committee-image {
+                width: 100%;
+              }
+            }
+
+            .committee-container-item-list li{
               margin-bottom: 1%;
 
               .mailcommittee {
@@ -238,41 +299,7 @@ html {
               }
 
                   
-            }
-
-           
-           
-
-            
-  
-            
-          }
-        }
-
-        
-
-        /* DOCUMENTATION-SETTINGS */
-
-        #documentation-container {
-          display: grid;
-          grid-gap: 100px;
-          grid-template-columns: 1fr 1fr 1fr;
-          .documentation-container-item {
-            .documentation-container-item-title {
-              font-weight: 700;
-              font-size: 25px;
-            }
-
-            .documentation-container-item-text {
-              text-align: justify;
-              line-height: 1.5;
-            }
-
-            .documentation-container-item-link {
-              font-weight: 700;
-              text-decoration: none;
-              color: $color_primary_orange;
-            }
+            }     
           }
         }
       }

@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <title>SDAIH 2022</title>
 
-  <!-- FavIcon -->
-  <!--<link rel="icon" type="image/x-icon" href="img/favicon-32x32.ico">-->
-
   <!-- REGULAR CSS FILE -->
   <link rel="stylesheet" href="style.css">
 
@@ -33,16 +30,12 @@
   </script>
 
   <nav>
-    <!--<img src="img/horizontal_logo.png" onclick="logoClicked()" alt="Logo" id="header-logo">-->
     <div id="underline"></div>
-
     <a href="#home" id="active" class="menu-home">Home</a>
     <a href="#about" id="" class="menu-about">About</a>
     <a href="#callforpapers" id="" class="menu-callforpapers">Call for papers</a>
     <a href="#schedule" id="" class="menu-schedule">Schedule</a>
     <a href="#committee" id="" class="menu-committee">Committee</a>
-    <!--<a href="#documentation" id="" class="menu-documentation">Documentation</a>-->
-
   </nav>
 
   <script type="text/javascript">
@@ -148,15 +141,15 @@
 
   <section id="home">
     <div class="content">
-      <img id="home_image" src="img/uriel-sc-11KDtiUWRq4-unsplash.jpg" alt="Background image">
+      <img id="home_image" src="img/background.jpg" alt="Background image">
       <p class="intro">Workshop for IJCAI–ECAI 2022 <br> July 23-25, 2022 in Vienna <br><br></p>
       <p class="home_title">Scarce Data in Artificial Intelligence for Healthcare
         (SDAIH) <br></p>
-      
+
       <p class="sub_title">
       </p>
       <a href="#callforpapers" class="call_to_action_big">Submit your paper now ▶</a>
-     
+
     </div>
   </section>
 
@@ -167,22 +160,14 @@
       <div id="about-container">
         <div class="about-container-item">
           <p class="about-container-item-text">
-            <img id="about-image"  src="img/AdobeStock_270848023.jpeg" alt="About image">
-          </p>
-          
-          <p class="about-container-item-text">
-            AI has the potential to generate a revolution in the field of healthcare by enabling accurate,
-            fast and reliable analyses of data at an unprecedented scale both in the clinics and in industry.
-            Leveraged properly, AI can thus allow to better meet patient needs by developing new medical
-            devices, drugs, and personalized treatments, while simultaneously freeing up time for clinical
-            staff to nourish the profound human connection between caregivers and patients. Moreover,
-            AI promises to democratize the healthcare system by spreading basic services to low-income or
-            remote areas through telemedicine. <br><br>
             The goal of this workshop is to exchange learnings and efforts on how to solve the issue of
             data scarcity for the practical deployment of AI in healthcare. We aim at bringing together,
             from both academia and industry, researchers and data scientists that are confronted with challenges
             related to limited data availability for machine learning in medicine, medical engineering,
             biotechnology, pharmaceuticals, and medical services.
+          </p>
+          <p class="about-container-item-text">
+            <img id="about-image" src="img/about.jpeg" alt="About image">
           </p>
 
         </div>
@@ -197,38 +182,33 @@
   <section id="callforpapers">
     <div class="content">
       <p class="section_title">Call for papers</p>
-      <div id="use_case-container">
-        <div class="use_case-container-item">
-          <p class="use_case-container-item-title">Submission</p>
-          <p class="use_case-container-item-text">We welcome the submission of original research reports within the
-            topics of interest of the
-            workshop. The maximum length of papers is fixed to <strong>6 pages including references.</strong> We
-            especially
-            encourage the contribution of case studies, work in progress, position papers, and critical
-            analyses of failed projects. <br><br>
-            <strong>Note on proceedings publication</strong> We are in contact with multiple publishers to find the
-            most suitable option for a proceedings volume, and with potential sponsors to fund open access
-            publication of all accepted papers. This will also determine the details concerning format
-            requirements. <br><br>
-            <p class="use_case-container-item-text">
-              <strong>Paper submission deadline:</strong> May 13, 2022 <br>
-              <strong>Decision notification:</strong> June 3, 2022<br>
-              <strong>Camera-ready submission:</strong> June 17, 2022<br><br>
-            </p>
-            <a href="#" class="call_to_action">Link to submission (coming soon)</a>
-          </p><br>
+      <div id="callforpapers-container">
+        <div class="callforpapers-container-item">
+          <p class="callforpapers-container-item-title">Introduction</p>
+          <p class="callforpapers-container-item-text">
+            AI has the potential to generate a revolution in the field of healthcare by enabling accurate, fast and
+            reliable analyses of data at an unprecedented scale both in the clinics and in industry. Leveraged properly,
+            AI can thus allow to better meet patient needs by developing new medical devices, drugs, and personalized
+            treatments, while simultaneously freeing up time for clinical staff to nourish the profound human connection
+            between caregivers and patients. Moreover, AI promises to democratize the healthcare system by spreading
+            basic services to low-income or remote areas through telemedicine. <br><br>
+            Notwithstanding the terrific progress achieved in the last two decades, many AI projects related to medicine
+            struggle to make their way to deployment and sustainable productivity because of the limited availability of
+            high-quality annotated data. The scarcity of useful information is often exacerbated in medicine, medical
+            engineering, and healthcare in general because labelling requires highly-specialized staff, patient privacy
+            must be respected, ethnic differences and rare diseases adequately represented. Despite the incredible
+            advances of the last few years in facilitating data collection and annotation, learning representations, and
+            detecting different types of bias, basic observations on implications for practitioners are often lacking,
+            new ingenious ideas are flourishing, and recommendations for healthcare are far from established. <br><br>
+          </p>
 
-          
-  
-          <p class="use_case-container-item-title">Topics of interest</p>
-          <p class="use_case-container-item-text">
+          <p class="callforpapers-container-item-title">Topics of interest</p>
+          <p class="callforpapers-container-item-text">
             Topics of interest include, but are not limited to: <br>
-            <img id="use_case-image"  src="img/topic.png" alt="Topics image">
-            </p>
+            <img id="callforpapers-image" src="img/arrow.png" alt="Topics image">
+          </p>
 
-
-            <!--
-          <ul class="use_case-container-item-list">
+          <ul class="callforpapers-container-item-list">
             <li>Publication of datasets relevant to healthcare including text, images, audio and structured
               data.</li>
             <li>Hardware and software tools for enabling data acquisition in low-resource or restricted
@@ -256,96 +236,104 @@
             <li>Insightful, original analyses of reasons for the failure of AI projects in healthcare, and
               work-in-progress reports of efforts related to the themes listed above.</li>
           </ul>
+          <br><br>
           </p>
-          -->
 
-
-
+          <p class="callforpapers-container-item-title">Submission</p>
+          <p class="callforpapers-container-item-text">We welcome the submission of original research reports within the
+            topics of interest of the
+            workshop. The maximum length of papers is fixed to <strong>6 pages including references.</strong> We
+            especially
+            encourage the contribution of case studies, work in progress, position papers, and critical
+            analyses of failed projects. <br><br>
+            <strong>Note on proceedings publication</strong> We are in contact with multiple publishers to find the
+            most suitable option for a proceedings volume, and with potential sponsors to fund open access
+            publication of all accepted papers. This will also determine the details concerning format
+            requirements. <br><br>
+          <p class="callforpapers-container-item-text">
+            <strong>Paper submission deadline:</strong> May 13, 2022 <br>
+            <strong>Decision notification:</strong> June 3, 2022<br>
+            <strong>Camera-ready submission:</strong> June 17, 2022<br><br>
+          </p>
+          <a href="#" class="call_to_action">Link to submission (coming soon)</a>
+          </p><br>
         </div>
-
-
       </div>
     </div>
   </section>
 
   <section id="schedule">
     <div class="content">
-      <p class="section_title">Schedule</p>
-      <div id="about-container">
-        <div class="about-container-item">
-          <p class="about-container-item-text">
-            Schedule follows soon
+      <p class="section_title">Tentative schedule</p>
+      <div id="schedule-container">
+        <div class="schedule-container-item">
+          <ul class="schedule-container-item-list">
+            <li>09:00 - 10:30 = 3 presentations</li>
+            <li>10:30 - 10:50 = coffee break</li>
+            <li>10:50 - 11:30 = 2 presentations</li>
+            <li>11:30 - 12:30 = discussion session #1</li>
+            <li>12:30 - 13:30 = lunch break</li>
+            <li>13:30 - 15:00 = 3 presentations</li>
+            <li>15:00 - 15:20 = coffee break</li>
+            <li>15:20 - 16:00 = 2 presentations</li>
+            <li>16:00 - 17:00 = discussion session #2</li>
+          </ul>
+
+          <p class="schedule-container-item-text">
+            Discussion sessions are “round tables” organized around (2 × 5) speakers, starting from observations and
+            comments about the speaker's talks to stimulate discussions about common issues and how to solve them,
+            directions of future works, needed recommendations and policies. <br><br>
+            <img id="schedule-image" src="img/discussion_small.jpeg" alt="Discussion image">
           </p>
-          
         </div>
       </div>
-
     </div>
-
   </section>
 
 
   <section id="committee">
     <div class="content">
       <p class="section_title">Organising committee</p>
-      <div id="use_case-container">
-        <div class="use_case-container-item">
-          <p class="use_case-container-item-text">
-          <ul class="use_case-container-item-list">
-            <li><a href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=4484" class="namecommittee">Simone Lionetti</a>  <br>Lucerne University of Applied Sciences and Arts <br><br> <a href="mailto:simone.lionetti@hslu.ch" class="mailcommittee">Mail ▶ </a><br>+41 41 757 68 76 <br> <br></li>
+      <div id="committee-container">
+        <div class="committee-container-item">
+          <p class="committee-container-item-text">
+          <ul class="committee-container-item-list">
+            <li><a
+                href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=4484"
+                class="namecommittee">Simone Lionetti</a> <br>Lucerne University of Applied Sciences and Arts <br><br>
+              <a href="mailto:simone.lionetti@hslu.ch" class="mailcommittee">Mail ▶ </a><br>+41 41 757 68 76 <br> <br>
+            </li>
 
-            <li><a href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=1494" class="namecommittee">Marc Pouly</a> <br>Lucerne University of Applied Sciences and Arts <!--<br> <a href="mailto:marc.pouly@hslu.ch" class="mailcommittee">Mail ▶</a>--><br><br></li>
+            <li><a
+                href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=1494"
+                class="namecommittee">Marc Pouly</a> <br>Lucerne University of Applied Sciences and Arts
+              <!--<br> <a href="mailto:marc.pouly@hslu.ch" class="mailcommittee">Mail ▶</a>--><br><br>
+            </li>
 
-            <li><a href="https://dbe.unibas.ch/en/persons/alexander-navarini/" class="namecommittee">Alexander Navarini</a><br> University of Basel  <!--<br> <a href="mailto:alexander.navarini@usb.ch" class="mailcommittee">Mail ▶</a>--><br><br></li>
+            <li><a href="https://dbe.unibas.ch/en/persons/alexander-navarini/" class="namecommittee">Alexander
+                Navarini</a><br> University of Basel
+              <!--<br> <a href="mailto:alexander.navarini@usb.ch" class="mailcommittee">Mail ▶</a>--><br><br>
+            </li>
 
-            <li><a href="https://www.meduniwien.ac.at/web/forschung/researcher-profiles/researcher-profiles/index.php?id=688&res=philipp_tschandl" class="namecommittee">Philipp Tschandl</a> <br>Medical University of Vienna <br> <!--<a href="mailto:philipp.tschandl@meduniwien.ac.at" class="mailcommittee">Mail ▶</a>--></li>
+            <li><a
+                href="https://www.meduniwien.ac.at/web/forschung/researcher-profiles/researcher-profiles/index.php?id=688&res=philipp_tschandl"
+                class="namecommittee">Philipp Tschandl</a> <br>Medical University of Vienna <br>
+              <!--<a href="mailto:philipp.tschandl@meduniwien.ac.at" class="mailcommittee">Mail ▶</a>-->
+            </li>
 
-            
           </ul>
+          <br><br><br>
           </p>
-
-
-
         </div>
-
-
       </div>
+      <p class="section_title">Program committee (coming soon)</p>
     </div>
   </section>
 
-
-
-
   <footer>
-    <!--<img src="img/vertical_logo.png" alt="Logo">-->
     <div class="contact">
       <div class="title">SDAIH 2022</div>
-      <!--
-      <div class="person">
-        <div class="name">Simone Lionetti <br>
-          +41 41 757 68 76</div>
-        <a href="mailto:simone.lionetti@hslu.ch">Mail ▶</a>
-        -->
-      </div>
-      <!--
-      <div class="person">
-        <div class="name">Adrian Willi</div>
-        <a href="mailto:adrian.willi@stud.hslu.ch">Mail ▶</a>
-      </div>
     </div>
-    <div class="disclaimer">
-      <div class="title">Disclaimer</div>
-      <div class="text">This project is part of the Data Visualization (DAVI) lecture at the Lucerne University of
-        applied Sciences. We take no
-        responsibility for any losses. We consider your financial losses to be the result of a misinterpretation of our
-        statistics.</div>
-    </div>
-  -->
   </footer>
-
-  <!-- REGULAR JAVASCRIPT FILE -->
-  <script src="script.js"></script>
-
 </body>
-
 </html>
