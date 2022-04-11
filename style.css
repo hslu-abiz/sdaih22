@@ -1,6 +1,71 @@
 /* COLORS */
 /* FONTS */
 /* BORDERS & SHADOWS */
+@media screen and (max-width: 992px) {
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  html body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    -webkit-font-feature-settings: "lnum" 1;
+            font-feature-settings: "lnum" 1;
+    color: #161a22;
+    background: #eceff8;
+    /* background: linear-gradient($color_background 0%, $color_background 40%, $color_white 100%); */
+  }
+  html body nav {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    height: 80px;
+    background: #ffffff;
+    font-weight: 500;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    -webkit-box-shadow: 0px 5px 10px rgba(22, 26, 34, 0.2);
+            box-shadow: 0px 5px 10px rgba(22, 26, 34, 0.2);
+    z-index: 5;
+  }
+  html body nav a {
+    position: relative;
+    margin: auto 30px;
+    color: #bdc2c6;
+    text-decoration: none;
+  }
+  html body nav #active {
+    color: #161a22;
+    font-weight: 700;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  html body nav #underline {
+    position: absolute;
+    left: 0;
+    height: 6px;
+    width: 0;
+    background: #5b5ec9;
+    bottom: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  html body nav #header-logo {
+    display: none;
+  }
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -72,6 +137,12 @@ html body nav #header-logo {
   left: 70px;
   height: 70px;
   margin-top: 0.5%;
+}
+
+@media screen and (max-width: 700px) {
+  html body nav #header-logo {
+    display: none;
+  }
 }
 
 html body section {
