@@ -10,6 +10,10 @@ $color_primary_orange: #f36454;
 $color_white: #ffffff;
 $color_positive: #72cf92;
 $color_negative: #de4e4e;
+$breakpoint-small: 400px;
+$breakpoint-medium: 700px;
+
+
 
 /* FONTS */
 
@@ -70,11 +74,15 @@ html {
         border-radius: 10px;
       }
 
+      
+    
       #header-logo {
         position: absolute;
-        left: 80px;
-        width: 13%;
-      }
+        left: 70px;
+        height: 70px;
+        margin-top: 0.5%;   
+    }
+
     }
 
     section {

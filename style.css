@@ -69,8 +69,9 @@ html body nav #underline {
 
 html body nav #header-logo {
   position: absolute;
-  left: 80px;
-  width: 13%;
+  left: 70px;
+  height: 70px;
+  margin-top: 0.5%;
 }
 
 html body section {
