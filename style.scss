@@ -214,6 +214,15 @@ html {
           margin-top: 20px;
         }
 
+        .call_to_action_medium {
+          font-size: 20px;
+          font-weight: 700;
+          width: 50%;
+          text-decoration: none;
+          color: $color_primary_orange;
+          margin-top: 20px;
+        }
+
         .call_to_action_big {
           font-size: 28px;
           font-weight: 700;
@@ -292,6 +301,11 @@ html {
 
               #callforpapers-image {
                 width: 100%;
+              }
+
+              a {
+                text-decoration: none;
+                color: $color_text_dark;
               }
             }
 
@@ -409,15 +423,18 @@ html {
         .person {
           margin-top: 20px;
           .name {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
           }
 
           a {
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 700;
             text-decoration: none;
             color: $color_primary_orange;
+          }
+          .color-black{
+            color: $color_text_dark;
           }
         }
       }
