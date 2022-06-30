@@ -315,6 +315,82 @@ html {
           }
         }
 
+                /* CALL-FOR-PAPERS-SETTINGS */
+
+        #callforpapers-container {
+          display: flex;
+          margin: auto;
+          width: 100%;
+          justify-content: space-between;
+
+          .callforpapers-container-item {
+            width: 95%;
+
+            .callforpapers-container-item-title {
+              font-size: 25px;
+              font-weight: 700;
+            }
+
+            .callforpapers-container-item-text {
+              font-size: 16px;
+              line-height: 1.5;
+              text-align: justify;
+              text-justify: inter-word;
+
+              #callforpapers-image {
+                width: 100%;
+              }
+
+              a {
+                text-decoration: none;
+                color: $color_text_dark;
+              }
+            }
+
+            .callforpapers-container-item-list li{
+              margin-bottom: 1%;                  
+            }     
+          }
+        }
+
+        /* ACCEPTED-PAPERS-SETTINGS */
+
+        #acceptedpapers-container {
+          display: flex;
+          margin: auto;
+          width: 100%;
+          justify-content: space-between;
+
+          .acceptedpapers-container-item {
+            width: 95%;
+
+            .acceptedpapers-container-item-title {
+              font-size: 25px;
+              font-weight: 700;
+            }
+
+            .acceptedpapers-container-item-text {
+              font-size: 16px;
+              line-height: 1.5;
+              text-align: justify;
+              text-justify: inter-word;
+
+              #acceptedpapers-image {
+                width: 100%;
+              }
+
+              a {
+                text-decoration: none;
+                color: $color_text_dark;
+              }
+            }
+
+            .acceptedpapers-container-item-list li{
+              margin-bottom: 1%;                  
+            }     
+          }
+        }        
+
         /* SCHEDULE-SETTINGS */
 
         #schedule-container {

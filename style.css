@@ -159,6 +159,8 @@ html body section .content {
   /* HOME-SETTINGS */
   /* ABOUT-SETTINGS */
   /* CALL-FOR-PAPERS-SETTINGS */
+  /* CALL-FOR-PAPERS-SETTINGS */
+  /* ACCEPTED-PAPERS-SETTINGS */
   /* SCHEDULE-SETTINGS */
   /* COMMITTEE-SETTINGS */
 }
@@ -306,6 +308,86 @@ html body section .content #callforpapers-container .callforpapers-container-ite
 }
 
 html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-list li {
+  margin-bottom: 1%;
+}
+
+html body section .content #callforpapers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item {
+  width: 95%;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-text #callforpapers-image {
+  width: 100%;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-text a {
+  text-decoration: none;
+  color: #161a22;
+}
+
+html body section .content #callforpapers-container .callforpapers-container-item .callforpapers-container-item-list li {
+  margin-bottom: 1%;
+}
+
+html body section .content #acceptedpapers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item {
+  width: 95%;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-text #acceptedpapers-image {
+  width: 100%;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-text a {
+  text-decoration: none;
+  color: #161a22;
+}
+
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-list li {
   margin-bottom: 1%;
 }
 

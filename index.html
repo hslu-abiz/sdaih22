@@ -35,6 +35,7 @@
     <a href="#home" id="active" class="menu-home">Home</a>
     <a href="#about" id="" class="menu-about">About</a>
     <a href="#callforpapers" id="" class="menu-callforpapers">Call for papers</a>
+    <a href="#acceptedpapers" id="" class="menu-acceptedpapers">Accepted papers</a>
     <a href="#schedule" id="" class="menu-schedule">Schedule</a>
     <a href="#committee" id="" class="menu-committee">Committee</a>
   </nav>
@@ -82,7 +83,7 @@
       }
 
       function reset_navbar(except_current_menu) {
-        const menu_points = [".menu-home", ".menu-about", ".menu-callforpapers", ".menu-schedule", ".menu-committee"];
+        const menu_points = [".menu-home", ".menu-about", ".menu-callforpapers", ".menu-acceptedpapers", ".menu-schedule", ".menu-committee"];
         menu_points.forEach(element => {
           let active_element = document.querySelector(element)
           if (active_element.id != "")
@@ -93,6 +94,7 @@
       var homebottom = $('#home').offset().top + $('#home').height();
       var aboutbottom = $('#about').offset().top + $('#about').height();
       var usecasebottom = $('#callforpapers').offset().top + $('#callforpapers').height();
+      var usecasebottom_ = $('#acceptedpapers').offset().top + $('#acceptedpapers').height();
       var statisticsbottom = $('#schedule').offset().top + $('#schedule').height();
 
       // initial call
@@ -121,6 +123,11 @@
             active_element.id = "active";
           }
           if (stop > usecasebottom) {
+            reset_navbar(".menu-acceptedpapers");
+            var active_element = document.querySelector('.menu-acceptedpapers')
+            active_element.id = "active";
+          }
+          if (stop > usecasebottom_) {
             reset_navbar(".menu-schedule");
             var active_element = document.querySelector('.menu-schedule')
             active_element.id = "active";
@@ -256,11 +263,45 @@
             <del><strong>Paper submission deadline:</strong> May 13, 2022 <br></del>
             <del><strong>Paper submission deadline extended:</strong> May 20, 2022 <br></del>
             <del><strong>Decision notification:</strong> June 3, 2022<br></del>
-            <strong>Camera-ready submission:</strong> June 17, 2022<br><br>
+            <del><strong>Camera-ready submission:</strong> June 17, 2022<br></del><br>
             All deadlines correspond to the end of the indicated day Anywhere on Earth (AoE).<br> <br>
           </p>
           <a href="https://cmt3.research.microsoft.com/SDAIH2022" class="call_to_action_medium">Access your contribution via CMT</a>
           </p><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="acceptedpapers">
+    <div class="content">
+      <p class="section_title">Accepted papers</p>
+      <div id="acceptedpapers-container">
+        <div class="acceptedpapers-container-item">
+          <ul class="acceptedpapers-container-item-list">
+            <li><b>Ontology-driven self-supervision for Adverse Childhood Experiences
+              identification using social media datasets</b> - Jinge Wu, Rowena Smith and Honghan Wu <br></li>
+            <li><b>Towards reducing segmentation labeling costs for CMR imaging using
+              explainable AI</b> - Alessa Stria and Asan Agibetov<br></li>
+            <li><b>Evaluation of the Synthetic Electronic Health Records</b> - Emily Muller, Xu Zheng and Jer Hayes<br></li>
+            <li><b>OData Augmentation for Reliability and Fairness in Counselling Quality
+              Classification</b> - Vivek Kumar, Simone Balloccu, Wu Zixiu,
+              Ehud Reiter, Rim Helaoui, Diego Reforgiato Recupero and Daniele Riboni<br></li>
+            <li><b>PT-MESS: a Problem-Transformation approach for Multi-Event
+              Survival analySis</b> - Michela Venturini, Felipe Kenji Nakano and Celine Vens<br></li> 
+            <li><b>How Much Data is Enough? Benchmarking Transfer Learning for Few
+              Shot ECG Image Classification</b> - Sathvik Bhaskarpandit<br></li>
+            <li><b>Towards Reducing the Need for Annotations in Digital Dermatology with Self-Supervised Learning</b> - Fabian Gröger, Philippe Gottfrois, Ludovic Amruthalingam, Alvaro Gonzalez-Jimenez,
+              Simone Lionetti, Alexander A. Navarini and Marc Pouly<br></li>
+            <li><b>Eye-Tracking Dataset to Support the Research on Autism Spectrum Disorder</b> - Federica Cilia, Romuald Carette, Mahmoud Elbattah, Jean-Luc Guérin and Gilles Dequen<br></li>
+            <li><b>Segmenting Overlapping Red Blood Cells With Classical Image Processing and Deep Learning</b> - Nils Brünggel, Pascal Vallotton and Patrick Conway<br></li>
+            
+            <li><b>SANO: Score-based Anomaly Localization for Dermatology</b> - Alvaro Gonzalez-Jimenez, Simone Lionetti, Ludovic Amruthalingam, Philippe Gottfrois, Marc Pouly and Alexander Navarini<br></li>
+          </ul>
+          <br><br>
+          </p>
+
+          
         </div>
       </div>
     </div>
