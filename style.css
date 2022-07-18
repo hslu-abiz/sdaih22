@@ -422,6 +422,11 @@ html body section .content #schedule-container .schedule-container-item .schedul
   width: 100%;
 }
 
+html body section .content #schedule-container .schedule-container-item .schedule-container-item-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 html body section .content #schedule-container .schedule-container-item .schedule-container-item-list li {
   margin-bottom: 2%;
 }
