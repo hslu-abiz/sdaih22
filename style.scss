@@ -364,6 +364,13 @@ html {
           .acceptedpapers-container-item {
             width: 95%;
 
+            .acceptedpapers-container-item-link {
+              font-size: 16px;
+              font-weight: 500;
+              text-decoration: none;
+              color: $color_primary_orange;
+            }
+
             .acceptedpapers-container-item-title {
               font-size: 25px;
               font-weight: 700;

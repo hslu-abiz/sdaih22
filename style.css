@@ -366,6 +366,13 @@ html body section .content #acceptedpapers-container .acceptedpapers-container-i
   width: 95%;
 }
 
+html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-link {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #f36454;
+}
+
 html body section .content #acceptedpapers-container .acceptedpapers-container-item .acceptedpapers-container-item-title {
   font-size: 25px;
   font-weight: 700;
